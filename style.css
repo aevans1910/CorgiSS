@@ -1,44 +1,73 @@
+:root {
+    --color-orange: #c2842d;
+    --color-brown: #211607;
+    --color-black: #0d0d0c;
+    --color-white: #f2ece1;
+
+    --font-logo: 'Pacifico', sans-serif;
+    --font-hero: 'Comfortaa', sans-serif;
+    --font-copy: 'Roboto', sans-serif;    
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Pacifico'), url('./Pacifico/Pacifico-Regular.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Comfortaa'), url('./Comfortaa/Comfortaa-VariableFont_wght.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Roboto'), url('./Roboto/Roboto-Regular.ttf') format('opentype');
+}
+
 .dark {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #f2ece1;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    justify-content: center;
+    font-family: var(--font-copy);
+    margin: 20px 50px 20px 50px;
 }
 
 .dark > .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-right: 90px;
 }
 
-.dark > .navbar > ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+.navbar > ul {
+    display: flex;
+    flex-direction: row;
 }
 
-.dark > .navbar > ul > li {
-  list-style: none;
-  margin: 20px;
+.navbar > :nth-child(2) {
+    transform: translate(20px, 0px);
 }
 
-.dark > .navbar > ul > li > a {
-  text-decoration: none;
-  color: #c2842d;
+.title {
+    font-family: var(--font-logo);
 }
-/*# sourceMappingURL=style.css.map */
+
+.navbar > ul > li {
+    list-style: none;
+    margin: 20px;
+    font-family: var(--font-hero);
+    font-weight: 600;
+}
+
+.navbar > ul > li > a {
+    text-decoration: none;
+    color:var(--color-brown);
+}
