@@ -31,10 +31,9 @@
 }
 
 .dark {
-    display: flex;
-    flex-direction: column;
     background-color: var(--color-white);
     justify-content: center;
+    align-content: center;
     font-family: var(--font-copy);
     margin: 20px 50px 20px 50px;
 }
@@ -71,3 +70,77 @@
     text-decoration: none;
     color:var(--color-brown);
 }
+
+.container {
+    margin: 20px 20px;}
+
+#headings {
+    font-family: var(--font-hero);
+}
+
+h2 {
+    font-family: var(--font-hero);
+}
+
+#buttons > button {
+    height: 30px;
+    width: 90px;
+    border-radius: 7px;
+    border: solid var(--color-brown) 2px;
+    background-color:#bd9a79;
+    color: var(--color-brown);
+    font-size: 0.9em;
+    font-family: var(--font-hero);
+    text-align: justify;
+}
+
+button > :nth-child(1) {
+    height: 9px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: #0d0d0c;
+    transform: translate(58px, -13px) rotate(357deg);
+}
+
+button > :nth-child(2) {
+    height: 9px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: #0d0d0c;
+    transform: translate(53px, -17px) rotate(345deg);
+}
+
+button > :nth-child(3) {
+    height: 9px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: #0d0d0c;
+    transform: translate(64px, -31px) rotate(3deg);
+}
+
+button > :nth-child(4) {
+    height: 9px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: #0d0d0c;
+    transform: translate(68px, -34px) rotate(15deg);
+}
+
+button > :nth-child(5) {
+    height: 10px;
+    width: 11px;
+    border-radius: 50%;
+    background-color: #0d0d0c;
+    transform: translate(58.5px, -39px);
+}
+
+#links > p > a {
+    color: var(--color-orange);
+}
+
+#forms > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
