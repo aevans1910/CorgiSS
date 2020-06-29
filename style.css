@@ -1,8 +1,11 @@
 :root {
     --color-orange: #c2842d;
+    --color-lighter-brown: #bd9a79;
+    --color-light-brown: #9e8259;
     --color-brown: #211607;
     --color-black: #0d0d0c;
     --color-white: #f2ece1;
+    --color-whiter-white: #fcfaf2;
 
     --font-logo: 'Pacifico', sans-serif;
     --font-hero: 'Comfortaa', sans-serif;
@@ -31,7 +34,7 @@
 }
 
 .dark {
-    background-color: var(--color-white);
+    background-color: var(--color-whiter-white);
     justify-content: center;
     align-content: center;
     font-family: var(--font-copy);
@@ -87,7 +90,7 @@ h2 {
     width: 90px;
     border-radius: 7px;
     border: solid var(--color-brown) 2px;
-    background-color:#bd9a79;
+    background-color:var(--color-lighter-brown);
     color: var(--color-brown);
     font-size: 0.9em;
     font-family: var(--font-hero);
@@ -98,7 +101,7 @@ button > :nth-child(1) {
     height: 9px;
     width: 7px;
     border-radius: 50%;
-    background-color: #0d0d0c;
+    background-color: var(--color-black);
     transform: translate(58px, -13px) rotate(357deg);
 }
 
@@ -106,7 +109,7 @@ button > :nth-child(2) {
     height: 9px;
     width: 7px;
     border-radius: 50%;
-    background-color: #0d0d0c;
+    background-color: var(--color-black);
     transform: translate(53px, -17px) rotate(345deg);
 }
 
@@ -114,7 +117,7 @@ button > :nth-child(3) {
     height: 9px;
     width: 7px;
     border-radius: 50%;
-    background-color: #0d0d0c;
+    background-color: var(--color-black);
     transform: translate(64px, -31px) rotate(3deg);
 }
 
@@ -122,7 +125,7 @@ button > :nth-child(4) {
     height: 9px;
     width: 7px;
     border-radius: 50%;
-    background-color: #0d0d0c;
+    background-color: var(--color-black);
     transform: translate(68px, -34px) rotate(15deg);
 }
 
@@ -130,7 +133,7 @@ button > :nth-child(5) {
     height: 10px;
     width: 11px;
     border-radius: 50%;
-    background-color: #0d0d0c;
+    background-color: var(--color-black);
     transform: translate(58.5px, -39px);
 }
 
@@ -143,4 +146,56 @@ button > :nth-child(5) {
     flex-direction: column;
     justify-content: center;
 }
+
+#forms > form > label {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#forms > form > label > span {
+    font-family: var(--font-hero);
+    margin: 5px;
+}
+
+#forms > form > label > input {
+    height: 30px;
+    width: 400px;
+    border: solid var(--color-brown) 1px;
+    border-radius: 5px;
+    background-color: var(--color-white);
+    padding: 5px;
+    color: var(--color-light-brown);
+}
+
+#forms > form > label > textarea {
+    height: 100px;
+    width: 400px;
+    border: solid var(--color-brown) 1px;
+    border-radius: 5px;
+    background-color: var(--color-white);
+    padding: 5px;
+    color: var(--color-light-brown);
+    font-family: var(--font-copy);
+}
+
+#forms > form > .switch {
+    display: flex;
+    flex-direction: row;
+}
+
+#forms > form > .control-checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px;
+}
+
+#forms > form > .control-checkbox > input {
+    width: 13px;
+}
+
+
+
+
 
