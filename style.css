@@ -1,11 +1,13 @@
 :root {
     --color-orange: #c2842d;
-    --color-lighter-brown: #bd9a79;
+    --color-lighter-brown: #d6bfa7;
     --color-light-brown: #9e8259;
     --color-brown: #211607;
     --color-black: #0d0d0c;
     --color-white: #f2ece1;
     --color-whiter-white: #fcfaf2;
+    --color-green: #07731c;
+    --color-red: #9c1006;
 
     --font-logo: 'Pacifico', sans-serif;
     --font-hero: 'Comfortaa', sans-serif;
@@ -81,15 +83,16 @@
     font-family: var(--font-hero);
 }
 
-h2 {
+h1 {
     font-family: var(--font-hero);
+    margin-top: 35px;
 }
 
 #buttons > button {
     height: 30px;
     width: 90px;
     border-radius: 7px;
-    border: solid var(--color-brown) 2px;
+    border: none;
     background-color:var(--color-lighter-brown);
     color: var(--color-brown);
     font-size: 0.9em;
@@ -135,6 +138,24 @@ button > :nth-child(5) {
     border-radius: 50%;
     background-color: var(--color-black);
     transform: translate(58.5px, -39px);
+}
+
+#buttons > :nth-child(7) {
+    background-color: var(--color-red);
+    color: var(--color-white);
+}
+
+#buttons > :nth-child(8) {
+    background-color: var(--color-green);
+    color: var(--color-white);
+}
+
+#buttons > :nth-child(7) > div {
+    background-color: var(--color-white);
+}
+
+#buttons > :nth-child(8) > div {
+    background-color: var(--color-white);
 }
 
 #links > p > a {
@@ -195,6 +216,73 @@ button > :nth-child(5) {
     width: 13px;
 }
 
+#colors > .color-grid > div {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#colors > .color-grid > div > div {
+    height: 10px;
+    width: 10px;
+    border: solid var(--color-black) 0.5px;
+    margin: 7px;
+}
+
+#colors > .color-grid > :nth-child(5) > div {
+    background-color: var(--color-orange);
+}
+
+#colors > .color-grid > :nth-child(3) > div {
+    background-color: var(--color-lighter-brown);
+}
+
+#colors > .color-grid > :nth-child(4) > div {
+    background-color: var(--color-light-brown);
+}
+
+#colors > .color-grid > :nth-child(6) > div {
+    background-color: var(--color-brown);
+}
+
+#colors > .color-grid > :nth-child(7) > div {
+    background-color: var(--color-black);
+}
+
+#colors > .color-grid > :nth-child(2) > div {
+    background-color: var(--color-white);
+}
+
+#colors > .color-grid > :nth-child(1) > div {
+    background-color: var(--color-whiter-white);
+}
+
+#colors > .color-grid > :nth-child(8) > div {
+    background-color: var(--color-green);
+}
+
+#colors > .color-grid > :nth-child(9) > div {
+    background-color: var(--color-red);
+}
+
+#footers > .page-footer > :first-child > :first-child {
+    list-style: none;
+}
+
+#footers > .page-footer > :nth-child(2) {
+    list-style: none;
+}
+
+#footers > .page-footer > :nth-child(3) {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#footers > .page-footer > :nth-child(3) > li {
+    margin-right: 15px;
+}
 
 
 
