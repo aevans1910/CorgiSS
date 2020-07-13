@@ -98,6 +98,7 @@ h1 {
     font-size: 0.9em;
     font-family: var(--font-hero);
     text-align: justify;
+    padding: 5px;
 }
 
 button > :nth-child(1) {
@@ -105,7 +106,7 @@ button > :nth-child(1) {
     width: 7px;
     border-radius: 50%;
     background-color: var(--color-black);
-    transform: translate(58px, -13px) rotate(357deg);
+    transform: translate(58px, -15px) rotate(357deg);
 }
 
 button > :nth-child(2) {
@@ -113,7 +114,7 @@ button > :nth-child(2) {
     width: 7px;
     border-radius: 50%;
     background-color: var(--color-black);
-    transform: translate(53px, -17px) rotate(345deg);
+    transform: translate(53px, -19px) rotate(345deg);
 }
 
 button > :nth-child(3) {
@@ -121,7 +122,7 @@ button > :nth-child(3) {
     width: 7px;
     border-radius: 50%;
     background-color: var(--color-black);
-    transform: translate(64px, -31px) rotate(3deg);
+    transform: translate(64px, -33px) rotate(3deg);
 }
 
 button > :nth-child(4) {
@@ -129,7 +130,7 @@ button > :nth-child(4) {
     width: 7px;
     border-radius: 50%;
     background-color: var(--color-black);
-    transform: translate(68px, -34px) rotate(15deg);
+    transform: translate(68px, -36px) rotate(15deg);
 }
 
 button > :nth-child(5) {
@@ -137,7 +138,7 @@ button > :nth-child(5) {
     width: 11px;
     border-radius: 50%;
     background-color: var(--color-black);
-    transform: translate(58.5px, -39px);
+    transform: translate(58.5px, -41px);
 }
 
 #buttons > :nth-child(7) {
@@ -282,6 +283,29 @@ button > :nth-child(5) {
 
 #footers > .page-footer > :nth-child(3) > li {
     margin-right: 15px;
+}
+
+code {
+    color: var(--color-orange);
+}
+
+.page-footer-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.page-footer-2 > ul {
+    list-style: none;
+}
+
+.page-footer-2 > ul > li > a {
+    text-decoration: none;
+    color: var(--color-orange);
+}
+
+.page-footer-2 > ul > li > h3 {
+    font-family: var(--font-hero);
 }
 
 
